@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+// Modules
+import firebase from './firebase';
+import { useEffect, useState } from 'react';
+import {getDatabase, ref, onValue} from 'firebase/database';
+
+// Components
+import Nav from './Nav.js';
+import Chat from './Chat.js';
+import Sidebar from './Sidebar';
+
+//Assets
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Sidebar />
+      <Chat />
     </div>
   );
 }
