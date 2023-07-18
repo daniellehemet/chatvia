@@ -7,6 +7,8 @@ import {getDatabase, ref, onValue} from 'firebase/database';
 import Nav from './Nav.js';
 import Chat from './Chat.js';
 import Sidebar from './Sidebar';
+import MessageInput from './MessageInput';
+import MessageUserInfo from './MessageUserInfo';
 
 //Assets
 import './App.css';
@@ -18,6 +20,8 @@ function App() {
       <Nav />
       <Sidebar />
       <Chat />
+      <MessageInput />
+      <MessageUserInfo />
     </div>
   );
 }
